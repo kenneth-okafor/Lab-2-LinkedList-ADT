@@ -45,5 +45,8 @@ public class TestList {
 
         System.out.println("Display Linked List:");
         list.displayList();
+
+        //listLongest()
+        System.out.println("Longest String: " + list.listLongest());
     }
 }
