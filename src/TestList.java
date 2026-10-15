@@ -48,5 +48,49 @@ public class TestList {
 
         //listLongest()
         System.out.println("Longest String: " + list.listLongest());
+
+        //inserting an item in the middle
+        list.add(2, "Watermelon");
+
+        System.out.println("List after inserting Watermelon");
+        list.displayList();
+
+        System.out.println("Longest String: " + list.listLongest());
+
+        //removing first item
+        list.remove(1);
+
+        System.out.println("List after removing first item: ");
+        list.displayList();
+
+        System.out.println("Size: " + list.size());
+
+        //invalid get index
+        try {
+            list.get(10);
+        } catch (ListIndexOutOfBoundsException e) {
+            System.out.println("Get error: " + e.getMessage());
+        }
+
+        //invalid add index
+        try {
+            list.add(10, "Mango");
+        }  catch (ListIndexOutOfBoundsException e) {
+            System.out.println("Add error: " + e.getMessage());
+        }
+
+        //invalid remove index
+        try {
+            list.remove(10);
+        }   catch (ListIndexOutOfBoundsException e) {
+            System.out.println("Remove error: " + e.getMessage());
+        }
+
+        //listLongest on empty list
+        list.removeAll();
+
+        System.out.println("Longest String in empty list: " + list.listLongest());
+
+        System.out.println("Is list empty? " + list.isEmpty());
     }
 }
