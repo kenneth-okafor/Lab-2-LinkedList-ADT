@@ -20,5 +20,23 @@ public class TestList {
         System.out.println("Item at 2: "  + list.get(2));
         System.out.println("Item at 3: "  + list.get(3));
         System.out.println("Item at 4: "  + list.get(4));
+
+        //remove()
+        list.remove(2);
+
+        System.out.println("Size after removing items: " + list.size());
+
+        System.out.println("Item at 1: "  + list.get(1));
+        System.out.println("Item at 2: "  + list.get(2));
+        System.out.println("Item at 3: "  + list.get(3));
+
+        //removeAll()
+        list.removeAll();
+
+        System.out.println("Size after removing all items: " + list.size());
+        System.out.println("Is list empty? "  + list.isEmpty());
+
+
+
     }
 }
