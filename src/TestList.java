@@ -37,6 +37,13 @@ public class TestList {
         System.out.println("Is list empty? "  + list.isEmpty());
 
 
+        //displayList()
+        list.add(1, "Apple");
+        list.add(2, "Banana");
+        list.add(3, "Strawberry");
+        list.add(4, "Orange");
 
+        System.out.println("Display Linked List:");
+        list.displayList();
     }
 }
